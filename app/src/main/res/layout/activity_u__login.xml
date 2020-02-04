@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".MainActivity">
+
+
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/logo"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-70dp"
+        android:background="@drawable/edit_text_login"
+        android:ems="10"
+        android:hint="@string/username_or_email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textColorHint="#85FFFFFF" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/user_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-94dp"
+        android:background="@drawable/edit_text_login"
+        android:ems="10"
+        android:hint="@string/password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColorHint="#8AFFFFFF" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="-81dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            >
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Log In"
+            />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
